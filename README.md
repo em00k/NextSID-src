@@ -14,12 +14,12 @@ change applied to SID B channel.
 
 
 
-- NEXTSID.INC is the include file for the following v0.5b bins;
+	NEXTSID.INC is the include file for the following v0.5b bins;
 
-- VOL-SID.BIN - 4096 BYTES ORG 32768 $8000 **KEEP IN THIS ORDER**
-- NEXTSID.BIN - 4096 BYTES ORG 36864 $9000 **KEEP IN THIS ORDER**
- 
-- CTC-SID.BIN - 1152 BYTES ORG 63232 $F700 **DO NOT BANK OUT**
+	VOL-SID.BIN - 4096 BYTES ORG 32768 $8000 **KEEP IN THIS ORDER**
+	NEXTSID.BIN - 4096 BYTES ORG 36864 $9000 **KEEP IN THIS ORDER**
+
+	CTC-SID.BIN - 1152 BYTES ORG 63232 $F700 **DO NOT BANK OUT**
 
 
 The waveform pattern data is now in the range of 1-128 using a 4K table
@@ -95,26 +95,26 @@ bit    7 is PLAY/STOP (stop acts as pause)
 bits 6-4 are for PSG C,B,A enable (0 will mute the channel)
 bits 2-0 are for SID C,B,A enable BUT you must also set the master PSG bit
 
-SID_OFF	equ	00h	; SID enable channel masks
-SID_A	equ	01h
-SID_B	equ	02h
-SID_AB	equ	03h
-SID_C	equ	04h
-SID_AC	equ	05h
-SID_BC	equ	06h
-SID_ABC	equ	07h
+	SID_OFF	equ	00h	; SID enable channel masks
+	SID_A	equ	01h
+	SID_B	equ	02h
+	SID_AB	equ	03h
+	SID_C	equ	04h
+	SID_AC	equ	05h
+	SID_BC	equ	06h
+	SID_ABC	equ	07h
 
-PSG_OFF	equ	00h	; PSG/SID enable channel masks
-PSG_A	equ	10h
-PSG_B	equ	20h
-PSG_AB	equ	30h
-PSG_C	equ	40h
-PSG_AC	equ	50h
-PSG_BC	equ	60h
-PSG_ABC	equ	70h
+	PSG_OFF	equ	00h	; PSG/SID enable channel masks
+	PSG_A	equ	10h
+	PSG_B	equ	20h
+	PSG_AB	equ	30h
+	PSG_C	equ	40h
+	PSG_AC	equ	50h
+	PSG_BC	equ	60h
+	PSG_ABC	equ	70h
 
-PT3_PLAY	equ	80h	; PT3 play/stop control
-PT3_STOP	equ	00h
+	PT3_PLAY	equ	80h	; PT3 play/stop control
+	PT3_STOP	equ	00h
 
 	ld	a,PSG_ABC+SID_B	; Enable PSG ABC + SID for channel B
 	ld	(nextsid_mode),a
@@ -123,13 +123,13 @@ PT3_STOP	equ	00h
 The following API functions are provided to set the PSG clock and waveform
 pointer/size;
 
-nextsid_set_psg_clock_A
-nextsid_set_psg_clock_B
-nextsid_set_psg_clock_C
+	nextsid_set_psg_clock_A
+	nextsid_set_psg_clock_B
+	nextsid_set_psg_clock_C
 
-nextsid_set_waveform_A
-nextsid_set_waveform_B
-nextsid_set_waveform_C
+	nextsid_set_waveform_A
+	nextsid_set_waveform_B
+	nextsid_set_waveform_C
 
 
 This is because direct write access to the variables could result in out of
