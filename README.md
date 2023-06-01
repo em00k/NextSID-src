@@ -14,12 +14,12 @@ change applied to SID B channel.
 
 
 
-NEXTSID.INC is the include file for the following v0.5b bins;
+ NEXTSID.INC is the include file for the following v0.5b bins;
 
-VOL-SID.BIN - 4096 BYTES ORG 32768 $8000 **KEEP IN THIS ORDER**
-NEXTSID.BIN - 4096 BYTES ORG 36864 $9000 **KEEP IN THIS ORDER**
-
-CTC-SID.BIN - 1152 BYTES ORG 63232 $F700 **DO NOT BANK OUT**
+ VOL-SID.BIN - 4096 BYTES ORG 32768 $8000 **KEEP IN THIS ORDER**
+ NEXTSID.BIN - 4096 BYTES ORG 36864 $9000 **KEEP IN THIS ORDER**
+ 
+ CTC-SID.BIN - 1152 BYTES ORG 63232 $F700 **DO NOT BANK OUT**
 
 
 The waveform pattern data is now in the range of 1-128 using a 4K table
