@@ -4,7 +4,7 @@
 *************************************************
 
 June 27th 2021, NextSID version v0.5b
-Written by 9bitcolor
+
 
 
 The sourcecode builds NEXTSID.SNX, the original test shell with a raster
