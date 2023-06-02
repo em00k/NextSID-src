@@ -55,10 +55,10 @@
 ; --------------------------------------------------------------------------
 
 
-monty_pt3	incbin	 "BIN/AUF_SID.PT3"
-hybrid_pt3	incbin	 "BIN/HYBRID.PT3"
-;;;robocop_pt3	incbin	 "BIN/RobocopSID.PT3"
-;;;odyssey_pt3	incbin	 "BIN/OdysseySID.PT3"
+monty_pt3	incbin	 "BIN/AUF_SID.pt3"
+hybrid_pt3	incbin	 "BIN/hybrid.pt3"
+;;;robocop_pt3	incbin	 "BIN/RobocopSID.pt3"
+;;;odyssey_pt3	incbin	 "BIN/OdysseySID.pt3"
 
 
 ; --------------------------------------------------------------------------
